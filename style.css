@@ -32,7 +32,7 @@ p{
   size: 20px;
   font-weight: 400;
 }
-button{
+#generate-btn{
   width: 191px;
   height: 42px;
   border-radius: 6px;
@@ -41,6 +41,7 @@ button{
   border: none;
   color: #ffffff;
   margin: 40px 0px 0px 52px;
+  cursor: pointer;
 }
 .passwords-box{
   display: flex;
@@ -48,15 +49,31 @@ button{
   margin-top: 40px;
   padding-top: 35px;
 }
-#password-el1 , #password-el2{
+#passwordEl1 , #passwordEl2{
   background-color: #273549;
-  width: 250px;
+  width: 220px;
   height: 39px;
   margin-left: 15px;
   text-align: center;
   box-sizing: border-box;
   padding: 11px;
   color: #10b981;
+  border: none;
+  outline: none;
+}
+.passwords-box button {
+  background-color: #273549;
+  border: none;
+  cursor: pointer;
+}
+.passwords-box button:hover {
+  background-color: #10b981;
+}
+img{
+  height: 20px;
+}
+.box1, .box2{
+  display: flex;
 }
 
 @media screen and (max-width: 765px) {
@@ -64,9 +81,13 @@ button{
     width: 280px;
     margin: auto;
   }
+  .box1, .box2{
+    display: flex;
+  }
   .passwords-box{
     display: flex;
     flex-direction: column;
-    row-gap: 30px;
+    row-gap: 30px
+    ;
   }
-}
+  }
